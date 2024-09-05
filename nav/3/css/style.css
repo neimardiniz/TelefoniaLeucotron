@@ -1,0 +1,227 @@
+
+/* HEADER COLORS *********************************** */
+.header {
+	background-color: #243849;
+	color: white;
+	font-family: Asap;
+	min-height: 138px;
+	max-height: 139px;
+}
+.header h1 {
+	font-weight: 700;
+	color: white;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 1px rgba(0, 51, 255, 1);
+}
+.header h4 {
+	font-weight: 400;
+	font-style: italic;
+}
+.headerlogo {
+	 display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+/* NAVBAR COLORS *********************************** */
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   color: white;
+   opacity: 100;
+   border: 0px;
+   border-radius: 0px;
+   z-index:9999;
+}
+.colorize {
+	background-color: #4D667C;
+	background: #4D667C;
+}
+	
+/* POST BODY + PAGE SIDE COLOR  ******************** */
+.body {
+	background-color: #FFF8F6;
+	color: #3B3632;
+	font-family: Asap;
+}
+
+body {
+	/* background-color: #E7EDF2; */
+	background-image: url('../assets/transp_bg.png');
+	background-repeat: repeat;
+}
+	
+/* FOOTER  ****************************************** */
+.footer {
+	background-color: #193441;
+	color: white;
+}
+
+.footer-copy {
+	padding-bottom: 10px;
+	padding-top: -5px;
+}
+	
+/* HR TAGS (ARTICLE SEP LINES)  ********************* */
+hr.articlebreak {
+	height:0px;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-bottom: 1px dotted #111;
+}
+hr.clearbreak {
+	height:0px;
+	margin-top: 3px;
+	border-bottom: 0px;
+	color: transparent;
+	opacity: 0;
+}
+
+
+/* NAV CODE ****************************************** */
+#nav {
+	font-family: Asap;
+}
+
+#nav > .navbar-inner {
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-weight: 700;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	font-weight: 300;
+}
+
+.dropdown-menu > li > a {
+	font-weight: bold;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* NAV HOVER COLORS *********************************** */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
+	color: #CEE3F6;
+}
+
+.navbar-default .navbar-toggle {
+	background-color: #243849;
+	border: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #909DA8;
+}
+
+/* AUTO DROPDOWN FIX  ******************************************* */
+@media (min-width:769px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
+
+/* MISC SCREEN ADJUSTMENTS ************************************ */
+@media (min-width:992px) {
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media (max-width:991px) {
+	.carousel {
+		display: none;
+	}
+}
+
+
+/* MINI POST CONTENT ******************************************** */
+.postbox {
+	min-height: 100px;
+}
+
+.postimg {
+	float:left;
+	margin-right:10px;
+	width: 100px;
+}
+
+.posthl {
+	padding:0 0 2px;
+	margin:0;
+}
+
+/* SIDEBAR  **************************************** */
+.bs-sidebar.affix {
+	top: 42px;
+}
+
+@media (min-width: 768px) {
+  .bs-sidebar {
+    background-color: #D8D8D8;
+	min-width: 303px;
+	max-width: 304px;
+	min-height: 356px;
+	max-height: 357px;
+  }
+  
+  .bs-sidebar.affix {
+	min-width: 304px;
+	max-width: 305px;
+	min-height: 355px;
+	max-height: 356px;
+	top: 77px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bs-sidebar {
+    background-color: #D8D8D8;
+	min-width: 370px;
+	max-width: 371px;
+    min-height: 495px;
+	max-height: 496px;
+  }
+  .bs-sidebar.affix {
+	min-width: 370px;
+	max-width: 371px;
+    min-height: 495px;
+	max-height: 496px;
+  }
+}
+	
+@media (max-width: 992px) {
+  .bs-sidebar.affix {
+	display: none;
+  }
+}
+
+
+/* NAV DROPDOWN COLORS ***************************** */
+.open {
+	color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+	background-color: #FBFBFB;
+	color:#000;
+}
+  
+  
+/* FIREFOX CAROUSEL FIX ***************************** */
+@-moz-document url-prefix() {
+	.carousel { 
+		border: 1px solid gray; 
+	}
+}
